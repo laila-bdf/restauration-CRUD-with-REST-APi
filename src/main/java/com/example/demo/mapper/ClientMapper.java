@@ -1,18 +1,23 @@
 package com.example.demo.mapper;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.example.demo.dto.ClientDTO;
 import com.example.demo.model.Client;
 
+@Component
 public class ClientMapper {
-	private static ModelMapper modelMapper=new ModelMapper();
 	
-	public static Client toEntity(ClientDTO clientDTO){
+	@Autowired
+	private  ModelMapper modelMapper;
+	
+	public  Client toEntity(ClientDTO clientDTO){
 		return modelMapper.map(clientDTO ,Client.class);
 	}
 
-	public static ClientDTO toDTO(Client client) {
+	public  ClientDTO toDTO(Client client) {
 		return modelMapper.map(client ,ClientDTO.class);
 	}
 }

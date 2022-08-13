@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.example.demo.dto.ClientDTO;
-import com.example.demo.exception.EntityNotFound;
+import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.model.Client;
 
 
@@ -22,7 +22,7 @@ import com.example.demo.model.Client;
 class ClientServiceImplTest {
 
 		@Autowired
-		private ClientServiceImpl clientService;
+		private ClientService clientService;
 		
 		
 		
@@ -49,7 +49,7 @@ class ClientServiceImplTest {
 			List<ClientDTO> clientList = buildClients() ;
 			clientList.forEach(e ->clientService.saveClient(e) );
 			
-			List<Client> savedList = clientService.getAllClient_parPage(0);
+			List<Client> savedList = clientService.getAllClient_parPage(0,2);
 	        
 			assertEquals(clientList.size(),savedList.size());
 		}
@@ -107,7 +107,7 @@ class ClientServiceImplTest {
 			client.setPrenom("hanae");
 			client.setDateNaiss(new Date(0));
 			
-			assertThrows(EntityNotFound.class, ()-> {clientService.updateClient(client, 0L);});
+			assertThrows(EntityNotFoundException.class, ()-> {clientService.updateClient(client, 0L);});
 		}
 		@Test
 		public void testUpdateClient_NomisNull_Pass() throws Exception {
@@ -258,7 +258,7 @@ class ClientServiceImplTest {
 		
 		@Test
 		public void testGetClientById_Fail() {
-			 assertThrows(EntityNotFound.class, ()-> clientService.getClientById(0L));
+			 assertThrows(EntityNotFoundException.class, ()-> clientService.getClientById(0L));
 		}
 		
 		
@@ -272,13 +272,13 @@ class ClientServiceImplTest {
 			ClientDTO savedClient = clientService.saveClient(expecetedClient);
 			clientService.deleteClientById(savedClient.getId());
 			
-			 assertThrows(EntityNotFound.class, ()-> clientService.getClientById(savedClient.getId()));
+			 assertThrows(EntityNotFoundException.class, ()-> clientService.getClientById(savedClient.getId()));
 				
 			
 		}
 		@Test
 		public void testDeleteClientById_Fail() {
-			 assertThrows(EntityNotFound.class, ()-> clientService.deleteClientById(0L));
+			 assertThrows(EntityNotFoundException.class, ()-> clientService.deleteClientById(0L));
 				
 		}
 		

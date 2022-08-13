@@ -24,10 +24,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import com.example.demo.dto.ClientDTO;
-import com.example.demo.exception.EntityNotFound;
+import com.example.demo.exception.EntityNotFoundException;
 import com.example.demo.model.Client;
 import com.example.demo.repository.ClientRepository;
-import com.example.demo.services.ClientServiceImpl;
+import com.example.demo.services.ClientService;
 import com.example.demo.utiles.TestUtils;
 import com.google.gson.reflect.TypeToken;
 
@@ -39,7 +39,7 @@ class ClientControllerTest2 {
 	private MockMvc mvc;
 	
 	@MockBean
-	ClientServiceImpl clientService;
+	ClientService clientService;
 	
 	@MockBean
     private ClientRepository clientrepo;
@@ -79,7 +79,7 @@ class ClientControllerTest2 {
     public void testGetClientById_KO() throws Exception {
         // given
         given(clientService.getClientById(2L))
-                .willThrow(new EntityNotFound("client not found"));
+                .willThrow(new EntityNotFoundException("client not found"));
 
         // when
         MockHttpServletResponse response = mvc.perform(
@@ -145,7 +145,7 @@ class ClientControllerTest2 {
     public void testGetAll_parPage_OK() throws Exception {
     	// given
     	List<Client> clienttList =buildClient();
-        given(clientService.getAllClient_parPage(0)).willReturn(clienttList);
+        given(clientService.getAllClient_parPage(0,2)).willReturn(clienttList);
 
         // when
         MockHttpServletResponse response = mvc.perform(
@@ -154,7 +154,7 @@ class ClientControllerTest2 {
                 		.andReturn().getResponse();
 
         // verify that service method was called once
-     		verify(clientService).getAllClient_parPage(0);
+     		verify(clientService).getAllClient_parPage(0,2);
      		
 
      	// get the List from the Json response
@@ -190,7 +190,7 @@ class ClientControllerTest2 {
     @Test
     public void testDelete_KO() throws Exception {
     	given(clientService.deleteClientById(2L))
-        .willThrow(new EntityNotFound("client not found"));
+        .willThrow(new EntityNotFoundException("client not found"));
     	// execute
     	MockHttpServletResponse response = mvc.perform(MockMvcRequestBuilders.delete("/api/v1/clients/2"))
     			.andReturn().getResponse();
@@ -227,7 +227,7 @@ class ClientControllerTest2 {
     	ClientDTO client = new ClientDTO();
     	client.setNom("bouadif");
     	client.setPrenom("ayoub");
-        given(clientService.updateClient(client, 2L)).willThrow(new EntityNotFound("Client n'existe pas"));
+        given(clientService.updateClient(client, 2L)).willThrow(new EntityNotFoundException("Client n'existe pas"));
         
         MockHttpServletResponse response = mvc.perform(MockMvcRequestBuilders.put("/api/v1/clients/2").contentType(MediaType.APPLICATION_JSON).content(
         		jsonClientDTO.write(client).getJson()

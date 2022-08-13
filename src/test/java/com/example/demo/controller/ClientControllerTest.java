@@ -14,7 +14,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.ResponseEntity;
 
 import com.example.demo.dto.ClientDTO;
-import com.example.demo.services.ClientServiceImpl;
+import com.example.demo.services.ClientService;
 
 @SpringBootTest
 class ClientControllerTest {
@@ -23,7 +23,7 @@ class ClientControllerTest {
 	private ClientController clientController;
 
 	@MockBean
-	ClientServiceImpl clientService;
+	ClientService clientService;
 	
 	
 	@Test
