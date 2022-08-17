@@ -22,13 +22,12 @@ public class ClientService {
 
 	@Autowired
 	private ClientRepository clientrepository;
-	
+
 	@Autowired
 	private ClientMapper clientMapper;
 
-	
-	public Page<Client> findAll(Pageable page) {
-		return clientrepository.findAll(page);
+	public Page<ClientDTO> findAll(Pageable page) {
+		return clientMapper.toDTO(clientrepository.findAll(page));
 	}
 
 	public ClientDTO findById(Long id) {
@@ -48,7 +47,7 @@ public class ClientService {
 	public ClientDTO updateClient(ClientDTO client, Long id) {
 
 		findById(id);
-		client.setId(id);	
+		client.setId(id);
 		log.info("Client with id" + id + "updated");
 		return clientMapper.toDTO(clientrepository.save(clientMapper.toEntity(client)));
 
@@ -60,6 +59,5 @@ public class ClientService {
 		log.info("Client with id" + id + "deleted");
 		return "Done";
 	}
-
 
 }

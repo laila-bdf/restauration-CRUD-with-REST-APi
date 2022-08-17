@@ -1,162 +1,36 @@
-"2022-08-12 10:25:20 [restartedMain] INFO  c.e.demo.Restauration1Application - Starting Restauration1Application using Java 14.0.2 on DESKTOP-5T9VTNI with PID 10556 (E:\Stage_pfa_2022\workspace\restauration-1\target\classes started by user in E:\Stage_pfa_2022\workspace\restauration-1)
-""2022-08-12 10:25:20 [restartedMain] INFO  c.e.demo.Restauration1Application - No active profile set, falling back to 1 default profile: "default"
-""2022-08-12 10:25:21 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-""2022-08-12 10:25:21 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-""2022-08-12 10:25:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-""2022-08-12 10:25:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 540 ms. Found 1 JPA repository interfaces.
-""2022-08-12 10:25:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2022-08-12 10:25:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2022-08-12 10:25:29 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-""2022-08-12 10:25:29 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-""2022-08-12 10:25:29 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8166 ms
-""2022-08-12 10:25:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2022-08-12 10:25:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2022-08-12 10:25:30 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/db_restau'
-""2022-08-12 10:25:30 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-""2022-08-12 10:25:30 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-""2022-08-12 10:25:31 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-""2022-08-12 10:25:31 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2022-08-12 10:25:32 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.demo.model.RepasKey
-""2022-08-12 10:25:32 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.demo.model.RepasKey
-""2022-08-12 10:25:33 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-""2022-08-12 10:25:33 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2022-08-12 10:25:34 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2022-08-12 10:25:35 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2022-08-12 10:25:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-""2022-08-12 10:25:35 [restartedMain] INFO  c.e.demo.Restauration1Application - Started Restauration1Application in 16.154 seconds (JVM running for 17.858)
-""2022-08-12 10:36:01 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-""2022-08-12 10:36:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2022-08-12 10:36:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 74 ms
-""2022-08-12 10:43:41 [http-nio-8080-exec-4] INFO  c.e.demo.services.ClientServiceImpl - Client with id96updated
-""2022-08-12 10:46:50 [http-nio-8080-exec-2] INFO  c.e.demo.services.ClientServiceImpl - Client with id99deleted
-""2022-08-12 10:46:56 [http-nio-8080-exec-3] INFO  c.e.demo.services.ClientServiceImpl - Client with id96deleted
-""2022-08-12 10:50:30 [http-nio-8080-exec-8] INFO  c.e.demo.services.ClientServiceImpl - Client with id97deleted
-""2022-08-12 10:51:55 [http-nio-8080-exec-10] INFO  c.e.demo.services.ClientServiceImpl - Client with id102deleted
-""2022-08-12 10:52:26 [http-nio-8080-exec-5] INFO  c.e.demo.services.ClientServiceImpl - Client with id98deleted
-""2022-08-12 10:52:58 [http-nio-8080-exec-2] INFO  c.e.demo.services.ClientServiceImpl - Client with id101deleted
-""2022-08-12 10:53:07 [http-nio-8080-exec-6] INFO  c.e.demo.services.ClientServiceImpl - Client with id100deleted
-""2022-08-12 10:53:10 [http-nio-8080-exec-9] ERROR c.e.demo.services.ClientServiceImpl - Delete : client not found
-""2022-08-12 10:53:10 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.example.demo.exception.EntityNotFound: Delete : client not found]
-""2022-08-12 10:54:03 [http-nio-8080-exec-8] INFO  c.e.demo.services.ClientServiceImpl - Client with id103deleted
-""2022-08-12 10:54:19 [http-nio-8080-exec-5] ERROR c.e.demo.services.ClientServiceImpl - Delete : client not found
-""2022-08-12 10:54:19 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.example.demo.exception.EntityNotFound: Delete : client not found]
-""2022-08-12 10:54:50 [http-nio-8080-exec-5] INFO  c.e.demo.services.ClientServiceImpl - Client with id95deleted
-""2022-08-12 11:01:25 [http-nio-8080-exec-3] INFO  c.e.demo.services.ClientServiceImpl - Client with id104deleted
-""2022-08-12 11:02:50 [http-nio-8080-exec-3] INFO  c.e.demo.services.ClientServiceImpl - Client with id107deleted
-""2022-08-12 11:03:53 [http-nio-8080-exec-8] INFO  c.e.demo.services.ClientServiceImpl - Client with id110deleted
-""2022-08-12 11:12:22 [http-nio-8080-exec-7] INFO  c.e.demo.services.ClientServiceImpl - Client with id106updated
-""2022-08-12 11:12:43 [http-nio-8080-exec-5] INFO  c.e.demo.services.ClientServiceImpl - Client with id106deleted
-""2022-08-12 11:13:02 [http-nio-8080-exec-6] INFO  c.e.demo.services.ClientServiceImpl - Client with id108deleted
-""2022-08-12 11:19:08 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2022-08-12 11:19:08 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-""2022-08-12 11:19:08 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-""2022-08-12 11:19:09 [restartedMain] INFO  c.e.demo.Restauration1Application - Starting Restauration1Application using Java 14.0.2 on DESKTOP-5T9VTNI with PID 10556 (E:\Stage_pfa_2022\workspace\restauration-1\target\classes started by user in E:\Stage_pfa_2022\workspace\restauration-1)
-""2022-08-12 11:19:09 [restartedMain] INFO  c.e.demo.Restauration1Application - No active profile set, falling back to 1 default profile: "default"
-""2022-08-12 11:19:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-""2022-08-12 11:19:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
-""2022-08-12 11:19:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2022-08-12 11:19:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2022-08-12 11:19:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-""2022-08-12 11:19:11 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-""2022-08-12 11:19:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2499 ms
-""2022-08-12 11:19:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-""2022-08-12 11:19:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-""2022-08-12 11:19:12 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/db_restau'
-""2022-08-12 11:19:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-""2022-08-12 11:19:12 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2022-08-12 11:19:12 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.demo.model.RepasKey
-""2022-08-12 11:19:12 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.demo.model.RepasKey
-""2022-08-12 11:19:12 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-""2022-08-12 11:19:12 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2022-08-12 11:19:13 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2022-08-12 11:19:13 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2022-08-12 11:19:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-""2022-08-12 11:19:13 [restartedMain] INFO  c.e.demo.Restauration1Application - Started Restauration1Application in 4.398 seconds (JVM running for 3235.551)
-""2022-08-12 11:19:13 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-""2022-08-12 11:19:59 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2022-08-12 11:19:59 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-""2022-08-12 11:20:00 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-""2022-08-12 11:20:00 [restartedMain] INFO  c.e.demo.Restauration1Application - Starting Restauration1Application using Java 14.0.2 on DESKTOP-5T9VTNI with PID 10556 (E:\Stage_pfa_2022\workspace\restauration-1\target\classes started by user in E:\Stage_pfa_2022\workspace\restauration-1)
-""2022-08-12 11:20:00 [restartedMain] INFO  c.e.demo.Restauration1Application - No active profile set, falling back to 1 default profile: "default"
-""2022-08-12 11:20:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-""2022-08-12 11:20:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
-""2022-08-12 11:20:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2022-08-12 11:20:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2022-08-12 11:20:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-""2022-08-12 11:20:01 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-""2022-08-12 11:20:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1251 ms
-""2022-08-12 11:20:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-""2022-08-12 11:20:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-""2022-08-12 11:20:01 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/db_restau'
-""2022-08-12 11:20:01 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-""2022-08-12 11:20:01 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2022-08-12 11:20:01 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.demo.model.RepasKey
-""2022-08-12 11:20:01 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.demo.model.RepasKey
-""2022-08-12 11:20:02 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-""2022-08-12 11:20:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2022-08-12 11:20:02 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2022-08-12 11:20:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2022-08-12 11:20:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-""2022-08-12 11:20:02 [restartedMain] INFO  c.e.demo.Restauration1Application - Started Restauration1Application in 2.677 seconds (JVM running for 3284.798)
-""2022-08-12 11:20:02 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-""2022-08-12 11:20:40 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2022-08-12 11:20:40 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-""2022-08-12 11:20:40 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-""2022-08-12 11:20:40 [restartedMain] INFO  c.e.demo.Restauration1Application - Starting Restauration1Application using Java 14.0.2 on DESKTOP-5T9VTNI with PID 10556 (E:\Stage_pfa_2022\workspace\restauration-1\target\classes started by user in E:\Stage_pfa_2022\workspace\restauration-1)
-""2022-08-12 11:20:40 [restartedMain] INFO  c.e.demo.Restauration1Application - No active profile set, falling back to 1 default profile: "default"
-""2022-08-12 11:20:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-""2022-08-12 11:20:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
-""2022-08-12 11:20:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2022-08-12 11:20:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2022-08-12 11:20:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-""2022-08-12 11:20:41 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-""2022-08-12 11:20:41 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1201 ms
-""2022-08-12 11:20:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-""2022-08-12 11:20:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
-""2022-08-12 11:20:41 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/db_restau'
-""2022-08-12 11:20:41 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-""2022-08-12 11:20:42 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2022-08-12 11:20:42 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.demo.model.RepasKey
-""2022-08-12 11:20:42 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.demo.model.RepasKey
-""2022-08-12 11:20:42 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-""2022-08-12 11:20:42 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2022-08-12 11:20:42 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2022-08-12 11:20:43 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2022-08-12 11:20:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-""2022-08-12 11:20:43 [restartedMain] INFO  c.e.demo.Restauration1Application - Started Restauration1Application in 2.803 seconds (JVM running for 3325.115)
-""2022-08-12 11:20:43 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-""2022-08-12 12:06:56 [restartedMain] INFO  c.e.demo.Restauration1Application - Starting Restauration1Application using Java 14.0.2 on DESKTOP-5T9VTNI with PID 11928 (E:\Stage_pfa_2022\workspace\restauration-1\target\classes started by user in E:\Stage_pfa_2022\workspace\restauration-1)
-""2022-08-12 12:06:56 [restartedMain] INFO  c.e.demo.Restauration1Application - No active profile set, falling back to 1 default profile: "default"
-""2022-08-12 12:06:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-""2022-08-12 12:06:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-""2022-08-12 12:06:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-""2022-08-12 12:06:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interfaces.
-""2022-08-12 12:07:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2022-08-12 12:07:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2022-08-12 12:07:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-""2022-08-12 12:07:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-""2022-08-12 12:07:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3807 ms
-""2022-08-12 12:07:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2022-08-12 12:07:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2022-08-12 12:07:01 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/db_restau'
-""2022-08-12 12:07:01 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-""2022-08-12 12:07:01 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
-""2022-08-12 12:07:02 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-""2022-08-12 12:07:02 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2022-08-12 12:07:03 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.demo.model.RepasKey
-""2022-08-12 12:07:03 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.demo.model.RepasKey
-""2022-08-12 12:07:03 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-""2022-08-12 12:07:03 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2022-08-12 12:07:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2022-08-12 12:07:05 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2022-08-12 12:07:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-""2022-08-12 12:07:06 [restartedMain] INFO  c.e.demo.Restauration1Application - Started Restauration1Application in 10.126 seconds (JVM running for 11.14)
-""2022-08-12 12:08:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-""2022-08-12 12:08:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2022-08-12 12:08:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 116 ms
-""2022-08-12 12:13:25 [http-nio-8080-exec-9] ERROR c.e.demo.services.ClientService - Bad Request
-""2022-08-12 12:13:25 [http-nio-8080-exec-10] ERROR c.e.demo.services.ClientService - Bad Request
-""2022-08-12 12:13:25 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "totalClients"]
-""2022-08-12 12:13:25 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "page"]
-""2022-08-12 12:13:25 [http-nio-8080-exec-8] INFO  c.e.demo.services.ClientService - Client with id109deleted
+"2022-08-16 10:25:10 [restartedMain] INFO  c.e.demo.Restauration1Application - Starting Restauration1Application using Java 14.0.2 on DESKTOP-5T9VTNI with PID 6392 (E:\Stage_pfa_2022\workspace\restauration-1\target\classes started by user in E:\Stage_pfa_2022\workspace\restauration-1)
+""2022-08-16 10:25:10 [restartedMain] INFO  c.e.demo.Restauration1Application - No active profile set, falling back to 1 default profile: "default"
+""2022-08-16 10:25:10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-08-16 10:25:10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-08-16 10:25:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-08-16 10:25:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interfaces.
+""2022-08-16 10:25:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2022-08-16 10:25:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-08-16 10:25:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+""2022-08-16 10:25:14 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-08-16 10:25:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4131 ms
+""2022-08-16 10:25:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-08-16 10:25:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-08-16 10:25:16 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/db_restau'
+""2022-08-16 10:25:16 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-08-16 10:25:17 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+""2022-08-16 10:25:17 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-08-16 10:25:17 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+""2022-08-16 10:25:18 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.example.demo.model.RepasKey
+""2022-08-16 10:25:18 [restartedMain] WARN  org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.example.demo.model.RepasKey
+""2022-08-16 10:25:19 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-08-16 10:25:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-08-16 10:25:21 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-08-16 10:25:22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2022-08-16 10:25:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+""2022-08-16 10:25:22 [restartedMain] INFO  c.e.demo.Restauration1Application - Started Restauration1Application in 12.779 seconds (JVM running for 14.249)
+""2022-08-16 10:28:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-08-16 10:28:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-08-16 10:28:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 56 ms
+""2022-08-16 10:28:50 [http-nio-8080-exec-4] INFO  c.e.demo.services.ClientService - Client with id111deleted
+""2022-08-16 10:29:13 [http-nio-8080-exec-9] INFO  c.e.demo.services.ClientService - Client with id113deleted
+""2022-08-16 10:30:07 [http-nio-8080-exec-5] INFO  c.e.demo.services.ClientService - Client with id105updated
+""2022-08-16 10:30:34 [http-nio-8080-exec-8] INFO  c.e.demo.services.ClientService - Client with id112updated
+""2022-08-16 11:17:11 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m39s347ms867µs).
+""2022-08-16 11:17:49 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s38ms874µs600ns).
 "

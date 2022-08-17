@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.ClientDTO;
-import com.example.demo.model.Client;
 import com.example.demo.services.ClientService;
 
 @RestController
@@ -26,7 +25,7 @@ public class ClientController {
 	private ClientService clientservice;
 
 	@GetMapping
-	public ResponseEntity<Page<Client>> findAll(Pageable page) {
+	public ResponseEntity<Page<ClientDTO>> findAll(Pageable page) {
 		return new ResponseEntity<>(clientservice.findAll(page), HttpStatus.OK);
 	}
 
